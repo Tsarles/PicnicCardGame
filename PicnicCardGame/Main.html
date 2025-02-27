@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" href="assets/images/icon.png">
+
+    <title>Ask me about something</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Ask me about something</h1>
+        <div class="gif-container" id="headerGif">
+            <img src="assets/gif/" alt="Cute couple animated GIF" id="currentGif">
+        </div>
+        
+        <div class="game-area" id="gameArea">
+            <div class="card" id="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h2>Card</h2>
+                        <div class="heart-icon">❤️</div>
+                        <p>Tap to reveal</p>
+                    </div>
+                    <div class="card-back">
+                        <p id="cardContent">What is your favorite memory of us together?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button id="nextBtn">Next Card</button>
+            <button id="shuffleBtn">Shuffle Deck</button>
+            <button id="editToggleBtn">Edit Cards</button>
+        </div>
+        
+        <div class="edit-area hide" id="editArea">
+            <h2>Edit Your Cards</h2>
+            <div class="edit-form">
+                <textarea id="newCardText" placeholder="Enter a new question or prompt here..."></textarea>
+                <button id="addCardBtn">Add Card</button>
+            </div>
+            
+            <h2 style="margin-top: 20px;">Your Cards</h2>
+            <div class="card-list" id="cardList">
+                
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <p>&copy; 2025 Tsarls</p>
+        <div class="footer-links">
+            <a href="https://github.com/Tsarles">GitHub</a>
+            <span>|</span>
+            <a href="mailto:your-charles.cabral700@gmial.com">Email</a>
+        </div>
+    </footer>
+</body>
+<script src="assets/js/script.js"></script>
+</html>
